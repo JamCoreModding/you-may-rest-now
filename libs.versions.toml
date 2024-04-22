@@ -17,10 +17,13 @@ quilt-loader = "0.24.0"
 quilted-fabric-api = "7.4.0+0.90.0-1.20.1"
 
 # https://maven.jamalam.tech/#/releases
-jamlib = "1.0.4+1.20.4"
+jamlib = "1.0.8+1.20.4"
 
 # https://modrinth.com/mod/modmenu/versions
 modmenu = "9.0.0"
+
+# https://github.com/LlamaLad7/MixinExtras/releases
+mixin-extras = "0.3.5"
 
 [libraries]
 architectury-common = { module = "dev.architectury:architectury", version.ref = "architectury" }
@@ -45,3 +48,7 @@ jamlib-forge = { module = "io.github.jamalam360:jamlib-forge", version.ref = "ja
 jamlib-neoforge = { module = "io.github.jamalam360:jamlib-neoforge", version.ref = "jamlib" }
 
 modmenu = { module = "maven.modrinth:modmenu", version.ref = "modmenu" }
+
+mixin-extras-common = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixin-extras" }
+# Everything other than Forge already includes mixin extras
+mixin-extras-forge = { module = "io.github.llamalad7:mixinextras-forge", version.ref = "mixin-extras" }

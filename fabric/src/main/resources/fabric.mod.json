@@ -1,27 +1,27 @@
 {
     "schemaVersion": 1,
-    "id": "{{ mod_id }}",
+    "id": "you_may_rest_now",
     "version": "${version}",
-    "name": "{{ name }}",
-    "description": "{{ description }}",
+    "name": "You May Rest Now",
+    "description": "Allows you to sleep if no monsters can pathfind to you",
     "authors": [
-        "{{ author }}"
+        "Jamalam"
     ],
     "contact": {
-        "homepage": "https://github.com/{{github_owner}}/{{github_repo}}",
-        "sources": "https://github.com/{{github_owner}}/{{github_repo}}",
-        "issues": "https://github.com/{{github_owner}}/{{github_repo}}/issues"
+        "homepage": "https://github.com/JamCoreModding/you-may-rest-now",
+        "sources": "https://github.com/JamCoreModding/you-may-rest-now",
+        "issues": "https://github.com/JamCoreModding/you-may-rest-now/issues"
     },
     "license": "MIT",
-    "icon": "assets/{{mod_id}}/icon.png",
+    "icon": "assets/you_may_rest_now/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "{{group}}.{{mod_id}}.fabric.{{main_class}}Fabric"
+            "io.github.jamalam360.you_may_rest_now.fabric.YouMayRestNowFabric"
         ]
     },
     "mixins": [
-        "{{mod_id}}.mixins.json"
+        "you_may_rest_now.mixins.json"
     ],
     "depends": {
         "fabric": ">=${fabric_api_version}",

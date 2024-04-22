@@ -1,26 +1,24 @@
-# JamCore Multi-loader Template Mod
+![You May Rest Now: Allows you to sleep if no nearby monsters can pathfind to you](https://cdn.jamalam.tech/mod-assets/you-may-rest-now-banner.png)
 
-<p align="center">
-    <img alt="forge" height="25" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/forge_vector.svg">
-    <img alt="fabric" height="25" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/fabric_vector.svg">
-    <img alt="quilt" height="25" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/quilt_vector.svg">
-</p>
+<div align="center">
 
-This repository uses a system I created called
-[easytemplate](https://github.com/Jamalam360/easytemplate) to initialize the
-template automatically. After following the easytemplate prompt, you shouldn't
-have to make any changes before starting programming.
+[Report Issues](https://github.com/JamCoreModding/you-may-rest-now) • [Chat on Discord](https://discord.jamalam.tech) • [CurseForge](https://curseforge.com/minecraft/mc-mods/you-may-rest-now) • [Modrinth](https://modrinth.com/mod/you-may-rest-now)
 
-1. Install [Deno](https://deno.land/)
-2. Click `Use This Template`
-3. Clone the repository.
-4. Run
-   `deno run --allow-read --allow-write --allow-env https://raw.githubusercontent.com/Jamalam360/easytemplate/main/easytemplate.ts`
-   in the repository directory.
-5. Follow the instructions.
-6. See [the docs](https://docs.jamalam.tech) for more information.
+</div>
 
-## License
+You May Rest Now modifies the vanilla 'You may not rest now, there are monsters nearby' mechanic to
+allow sleeping, assuming that any nearby monsters can not reach you. It it also configurable to
+completely disable the mechanic.
 
-This repository contains the MIT license for ease of use, but you can change it
-to whatever you want.
+## How to Configure
+
+You May Rest Now can be configured via an in-game configuration screen which can be accessed in Mod
+Menu (Fabric/Quilt) or the mods screen (Forge/NeoForge).
+
+There are 3 options for the mode:
+
+1. `VANILLA`: use the default vanilla behavior (only able to sleep if no monsters are nearby)
+2. `DENY_IF_PATHFINDABLE`: allow sleeping only if nearby monsters cannot reach you.
+3. `DISABLE`: always allow sleeping no matter what monsters are nearby.
+
+[![Rent a server with Bisect Hosting: Use Code jamalam to get 25% off](https://www.bisecthosting.com/partners/custom-banners/e0cc6668-0d29-40ff-9820-4d4f5433198a.webp)](https://bisecthosting.com/jamalam)

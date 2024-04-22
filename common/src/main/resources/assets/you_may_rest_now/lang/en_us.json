@@ -1,0 +1,10 @@
+{
+  "config.you_may_rest_now.title": "You May Rest Now Config",
+  "config.you_may_rest_now.discord": "Chat on Discord",
+  "config.you_may_rest_now.github": "Report bugs and request new features on GitHub",
+  "config.you_may_rest_now.modrinth": "Check for updates on Modrinth",
+  "config.you_may_rest_now.mode": "Sleep Mode",
+  "config.you_may_rest_now.mode.vanilla": "Vanilla",
+  "config.you_may_rest_now.mode.deny_if_pathfindable": "Prevent Sleep if Pathfindable",
+  "config.you_may_rest_now.mode.disable": "Always allow sleeping"
+}
