@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(ServerPlayer.class)
 public class ServerPlayerMixin {
 
-    @ModifyExpressionValue(method = "startSleepInBed", at = @At(value = "INVOKE", target = "Ljava/util/List;isEmpty()Z"))
-    private boolean youmayrestnow$modifySleepValue(boolean original, @Local Vec3 vec3, @Local List<Monster> monsters) {
-        return YouMayRestNow.canSleep(monsters, vec3);
+    @ModifyExpressionValue(method = "method_26283", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/monster/Monster;isPreventingPlayerRest(Lnet/minecraft/world/entity/player/Player;)Z"))
+    private boolean youmayrestnow$modifySleepValue(boolean original, Monster monster) {
+        return YouMayRestNow.isMonsterPreventingPlayerRest(monster, (ServerPlayer) (Object) this);
     }
 }
